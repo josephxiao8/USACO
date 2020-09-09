@@ -43,11 +43,10 @@ for(int i=0; i<n; i++) cin>>v[i];
 sort(v.begin(), v.end());
 
 int minn=INT_MAX;
-int l,r;
-for(l=0; l<n-1; l++){
-	r=l;
-	while(r<n-1 && v[r+1]-v[l]<n) r++;
-	minn=min(minn,n-(r-l+1));
+for(int l=0; l<n-1; l++){
+	int id;
+	for(int r=l; r<n && v[r]-v[l]<=n-1; r++) id=r;
+	minn=min(minn,n-(id-l+1));
 }
 if(v[n-2]-v[0]+1==n-1 && v[n-1]-v[n-2]>2) minn=2;
 else if(v[n-1]-v[1]+1==n-1 && v[1]-v[0]>2) minn=2;
@@ -58,4 +57,6 @@ for(int i=0; i<n-1; i++) sum+=v[i+1]-v[i]-1;
 cout<<minn<<"\n"<<sum-min(v[1]-v[0]-1,v[n-1]-v[n-2]-1)<<"\n";
 return 0;	
 }
+
+
 
