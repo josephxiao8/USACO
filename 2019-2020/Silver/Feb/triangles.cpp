@@ -124,7 +124,6 @@ for(ll i=0; i<n; i++){
 	counter++;
 }
 
-sort(v.begin(), v.end());
 ll ans=0;
 for(auto x:v){
 	ll a,b;
