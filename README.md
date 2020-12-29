@@ -1,4 +1,4 @@
 # USACO
 
 Solutions to USACO contests.
-Currently updated with bronze, silver, and gold soltuions.
+Currently updated with bronze, silver, and gold solutions.
