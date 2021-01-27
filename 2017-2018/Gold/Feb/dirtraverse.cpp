@@ -80,7 +80,7 @@ cin.tie(0);
 	}
 	
 	down=vl(n,0);
-	child=vl(n,0); //number of children in subtree
+	child=vl(n,0); //number of leaves in subtree
 	dfs(0);
 	
 	up=vl(n,0);
