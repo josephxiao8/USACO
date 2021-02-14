@@ -53,11 +53,11 @@ cin.tie(0);
 		cnt--;
 		ans.pb(cnt+sett.order_of_key(v[i]));
 		sett.insert(v[i]);
-	}
+    }
 	
-	for(int i=0; i<ans.size(); i++){
+    for(int i=0; i<ans.size(); i++){
 		if(i!=0) cout<<" ";
 		cout<<ans[i];
-	}
-	return 0;
+    }
+    return 0;
 }
