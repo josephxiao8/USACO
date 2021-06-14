@@ -18,8 +18,8 @@ typedef vector<pl> vpl;
 typedef vector<ti> vti;
 typedef vector<tl> vtl;
  
-typedef priority_queue<pi> pq;
-typedef priority_queue<pl,vector<pl>,greater<pl>> pqg;
+typedef priority_queue<int> pq;
+typedef priority_queue<int,vector<int>,greater<int>> pqg;
 typedef tree<int,null_type,less<int>,rb_tree_tag,tree_order_statistics_node_update> indexed_set;
  
 #define mp make_pair
