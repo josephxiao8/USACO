@@ -1,4 +1,4 @@
 # USACO
 
-Solutions to USACO contests.
+Solutions to [USACO](http://www.usaco.org/) contests.
 Currently updated with bronze, silver, and gold solutions.
